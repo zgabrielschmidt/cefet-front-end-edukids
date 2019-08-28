@@ -68,16 +68,6 @@ body {
   height: 60px;
 }
 
-#controles ul {
-  list-style-type: none;
-  padding: 0;
-  transform: translateX(-80%);
-}
-
-#controles ul:hover {
-  transform: translateX(0);
-}
-
 .item {
   height: 38px;
   font-family: 'Righteous', cursive;

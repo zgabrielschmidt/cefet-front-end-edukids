@@ -1,3 +1,13 @@
+#controles ul {
+  list-style-type: none;
+  padding: 0;
+  transform: translateX(-80%);
+}
+
+#controles ul:hover {
+  transform: translateX(0);
+}
+
 /* Exercício 1: Criar uma transição para quando o mouse estiver em cima dos
  * botões play/stop (para que o elemento se revele lentamente)
  */
@@ -26,5 +36,5 @@
 }
 
 .atacando {
-  
+
 }
