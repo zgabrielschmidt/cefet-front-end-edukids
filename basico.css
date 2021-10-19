@@ -5,6 +5,7 @@
 /* -----------------------------------------
  * Elementos gerais
  */
+
 html, body {
   min-height: 100vh;
 }
@@ -23,11 +24,11 @@ body {
 
 #cabecalho {
   position: relative;
-  padding: 10px 10px 42px 10px;
+  padding: 10px 10px 42px;
   background-color: #000;
-  background-image: linear-gradient(to right, #6F92CC, #A6C0EC);
+  background-image: url(imgs/absurdity.png), linear-gradient(to right, #6F92CC, #A6C0EC);
   border-bottom: 1px solid #6F92CC;
-  box-shadow: 2px 2px 1px silver;
+  box-shadow: 0 2px 2px silver;
   color: #fff;
 }
 
@@ -55,6 +56,7 @@ body {
   font-size: 2em;
   padding: 0 .4em;
   border-radius: 17px 17px 0 0;
+  box-shadow: inset 0 2px 2px 0 silver;
 }
 
 #pontuacao.negativa {
@@ -85,10 +87,11 @@ body {
   border-bottom-style: none;
   background-color: #333;
   color: white;
+  display: flex;
+  justify-content: space-between;
 }
 
-.item>.texto {
-  display: inline-block;
+.item > .texto {
   margin: 3px 0;
   padding: 0 15px;
   cursor: pointer;
@@ -104,11 +107,8 @@ body {
 }
 
 .item>.icone {
-  display: inline-block;
   height: 100%;
   background-color: #555;
-  border-left: 2px solid #444;
-  float: right;
   padding: 0 8px;
   cursor: pointer;
 }
@@ -163,6 +163,7 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
   flex: 1;
+  padding: 1rem;
 }
 
 .animal {
@@ -171,7 +172,7 @@ body {
   height: 250px;
   padding: 10px;
   border-radius: 50%;
-  border: 2px solid white;
+  border: 2px solid #fff;
   background-color: #fff;
   transition: border-color 250ms ease-out;
 }
@@ -186,6 +187,7 @@ body {
 
 #info {
   padding: 15px;
-  background-color: rgb(136, 228, 95);
+  background-image: url(imgs/binding-dark.png), linear-gradient(to right, #1ca01c, #2ce12c);
+  border-top: 1px solid #2e9308;
   color: #fff;
 }
