@@ -5,10 +5,16 @@
 /* -----------------------------------------
  * Elementos gerais
  */
+html, body {
+  min-height: 100vh;
+}
+
 body {
   padding: 0;
   margin: 0;
   font-family: 'Exo', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 /* -----------------------------------------
@@ -154,6 +160,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  flex: 1;
 }
 
 .animal {
