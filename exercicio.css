@@ -12,7 +12,7 @@
  * botões play/stop (para que o elemento se revele lentamente)
  */
  #controles ul {
-
+  transition: 600ms linear;
  }
 
 /*
@@ -24,17 +24,33 @@
  *   - atacando: animal dá um salto e cresce, com uma borda vermelha
  */
 .com-fome {
-
+  animation: piscar 300ms linear 300ms infinite alternate;
+}
+@keyframes piscar {
+  from {opacity: 1;}
+  to {opacity: 0;}
 }
 
 .satisfeito {
-
+  animation: girar 900ms ease forwards;
+}
+@keyframes girar {
+  from {transform: rotate(150deg); background-color: green;}
+  to {transform: rotate(0deg); background-color: white;}
 }
 
 .com-raiva {
-
+  animation: negar 50ms ease 50ms infinite alternate;
+}
+@keyframes negar {
+  from {transform: translate(-.3em);}
+  to {transform: translate(.3em);}
 }
 
 .atacando {
-
+  animation: atacar 300ms ease forwards;
+}
+@keyframes atacar {
+  from {transform: rotateY(720deg); background-color: red;}
+  to {transform: rotateY(0deg);}
 }
